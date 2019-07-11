@@ -9,6 +9,7 @@ import { AllmoviesComponent } from './allmovies/allmovies.component';
 import { DetailmovieComponent } from './detailmovie/detailmovie.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HttpModule } from '@angular/http';
+import { RatingMovieComponent } from './rating-movie/rating-movie.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpModule } from '@angular/http';
     ProfileComponent,
     AllmoviesComponent,
     DetailmovieComponent,
-    InicioComponent
+    InicioComponent,
+    RatingMovieComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { HttpModule } from '@angular/http';
       { path: 'login', component: LoginComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'filmes', component: AllmoviesComponent },
-      { path: 'detail-filme', component: DetailmovieComponent }
+      { path: 'detail-filme', component: DetailmovieComponent },
+      { path: 'rating', component: RatingMovieComponent }
   ]),
 ],
   providers: [],

@@ -21,6 +21,11 @@ export class ServiceMooviesService {
     return this.http.get(this.baseApiPath + `/movie/${filmeid}?api_key=` + this.getApiKey());
 }
 
+rateFilm(filmeid: number,nota: number){
+  this.http.post(this.baseApiPath + `/movie/${filmeid}/rating?api_key=`+this.getApiKey(),
+  {"value":nota})
+}
+
   getApiKey(): string{
 
     return "d0ec1092678c868ebfe687360cc6a237";

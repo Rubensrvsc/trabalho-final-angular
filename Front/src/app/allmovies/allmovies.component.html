@@ -1,9 +1,12 @@
-
-<ul *ngFor="let film of lista_filmes">
-<li class="badge">
+<div *ngFor="let film of lista_filmes" class="card">
+<div class="card-body">
+<ul >
+<li class="card-text">
   {{film.original_title}}
 </li>
-<li>
+<li class="card-text">
   {{film.release_date}}
 </li>
 </ul>
+</div>
+</div>
