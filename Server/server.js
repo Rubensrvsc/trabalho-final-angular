@@ -9,9 +9,9 @@ app.use(cors());
 app.use(bodyParser.json());
  
 // DECLARE JWT-secret
-const JWT_Secret = 'your_secret_key';
+const JWT_Secret = '3215';
 
-var testUser = { email: 'kelvin@gmai.com', password: '1234'};
+var testUser = { email: 'rubens@gmail.com', password: '1234'};
 
 app.post('/api/authenticate', (req, res) => {
  
@@ -27,7 +27,7 @@ app.post('/api/authenticate', (req, res) => {
         });
       } else {
         res.status(403).send({
-          errorMessage: 'Authorisation required!'
+          errorMessage: 'Requer autorização'
         });
       }
     } else {

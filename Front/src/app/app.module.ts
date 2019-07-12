@@ -10,6 +10,7 @@ import { DetailmovieComponent } from './detailmovie/detailmovie.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HttpModule } from '@angular/http';
 import { RatingMovieComponent } from './rating-movie/rating-movie.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RatingMovieComponent } from './rating-movie/rating-movie.component';
     BrowserModule,
     RouterModule,
     FormsModule,
+    HttpClientModule,
     HttpModule,
     RouterModule.forRoot([
       { path: '',  component: InicioComponent },

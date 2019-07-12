@@ -11,11 +11,12 @@ export class AuthService {
   token;
  
   constructor(private http: HttpClient,private router: Router) { }
+  
   login(email: string, password: string) {
     this.http.post(this.uri + '/authenticate', {email: email,password: password})
     .subscribe((resp: any) => {
      
-      this.router.navigate(['profile']);
+      this.router.navigate(['filmes']);
       localStorage.setItem('auth_token', resp.token);
       
       })
